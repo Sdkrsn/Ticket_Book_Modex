@@ -10,33 +10,19 @@ export default function App(): JSX.Element {
     <ShowProvider>
       <BrowserRouter>
         <div className="container">
-          <header className="topbar">
-            <a className="brand" href="/">
-              <div className="logo">M</div>
-              <div style={{lineHeight:1}}>
-                <div style={{fontWeight:800}}>Modex</div>
-                <div className="muted" style={{fontSize:12}}>Ticket booking UI</div>
-              </div>
-            </a>
+          <header className="nav">
+            <div style={{display:'flex', alignItems:'center', gap:12}}>
+              <a className="link" href="/" style={{fontWeight:700, fontSize:18}}>Modex</a>
+              <div className="muted" style={{fontSize:13}}>Ticket Booking</div>
+            </div>
 
-            <nav className="nav" style={{marginLeft:'auto'}}>
+            <nav style={{marginLeft:'auto', display:'flex', gap:8}}>
               <Link to="/" className="link">Home</Link>
               <Link to="/admin" className="link">Admin</Link>
             </nav>
           </header>
 
-          <section className="hero">
-            <div className="hero-left">
-              <h1>Available Shows</h1>
-              <div className="sub muted">Pick a show and book seats quickly — secure, concurrent-safe booking.</div>
-            </div>
-
-            <div className="hero-cta">
-              <Link to="/admin" className="btn secondary">Create Show</Link>
-            </div>
-          </section>
-
-          <main style={{marginTop:12}}>
+          <main style={{display:'grid', gap:16}}>
             <div className="panel panel-inner">
               <Routes>
                 <Route path="/" element={<Home />} />
