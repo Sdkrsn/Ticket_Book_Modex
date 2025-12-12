@@ -23,24 +23,25 @@ Includes a clean frontend UI, a Node.js + Express backend, and PostgreSQL for da
 ---
 
 ## 🚀 Setup Instructions
-cd Backend
-npm install
-npm run dev
+- cd Backend
+- npm install
+- npm run dev
+
 (on a second terminal)
-cd Frontend
-npm install
-npm run dev
-### 1️⃣ Clone the Repository
+- cd Frontend
+- npm install
+- npm run dev
 
 ## Assumptions Made 
--Users cannot book more than 8 seats at once.
--Seat layout is static unless extended.
--PostgreSQL is running locally and correctly connected.
--No authentication system is implemented.
--Backend runs on localhost:5000.
--Frontend and backend communicate directly without tokens.
--Single screen/theatre implementation.
+- Users cannot book more than 8 seats at once.
+- Seat layout is static unless extended.
+- PostgreSQL is running locally and correctly connected.
+- No authentication system is implemented.
+- Backend runs on localhost:5000.
+- Frontend and backend communicate directly without tokens.
+- Single screen/theatre implementation.
 
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/Sdkrsn/Ticket_Book_Modex.git
 cd Ticket_Book_Modex
